@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contaire_baren">
+        <div class="counter">
+            <div class="logine">
+                <img src="logo1.jpg" class="logo1">
+                <p>character counter</p>
+            </div>
+            
+            <div><img src="photo.jpg" id="img"></div>
+        </div>
+
+        <h1>Analyze your text <br> in real-teme.</h1>
+        <form>
+            <textarea  placeholder="Srart typing here...(or paste yourtext)" class="textarea" id="myText"></textarea><br>
+            <input type="checkbox" name="check" id="excude">
+            <label for="excude">Exclude Spaces</label>
+            <input type="checkbox" name="check" id="set char">
+            <label for="set char">Set character Limit</label>
+
+        </form>
+        <div class="container">
+            <div class="div" id="caracter"><span id="count">00</span><p>Total characters</p></div>
+            <div class="div" id="word"><span id="camelCase">00</span><p>Word Count</p></div>
+            <div class="div" id="Sentence"><span id="sentenceCount">00</span><p>Sentence Count</p></div>
+        </div>
+        <h2>Letter Density</h2>
+        <div class="letter-density">
+            <table id="letterTable">
+            <thead id="tableBody">
+           </thead>
+           <tbody></tbody>
+            </table>
+        </div>
+    </div>
+<script src="main.js" ></script>
+</body>
+</html>
