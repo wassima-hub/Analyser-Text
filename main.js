@@ -31,7 +31,7 @@ textarea.addEventListener("input", () => {
   countDisplay.textContent = text.length;
 
   let espaces = text.match(/\s+/g);
-  wordCount.textContent = espaces ? espaces.length + 1 : text.trim() ? 1 : 0;
+  wordCount.textContent = espaces ? espaces.length: 0;
 
   let sentences = text.match(/[^\.!\?]+[\.!\?]+/g);
   sentenceCount.textContent = sentences ? sentences.length : 0;
